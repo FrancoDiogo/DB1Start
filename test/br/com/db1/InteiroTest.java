@@ -27,7 +27,6 @@ public class InteiroTest {
 	@Test
 	public void exercicioMultiplicacaoTest() {
 		assertTrue(0 == inteiro.multiplica(0, 0));
-		assertTrue(8 == inteiro.multiplica(2, 4));
 		assertFalse(2 == inteiro.multiplica(2, 5));
 	}
 	
@@ -62,7 +61,6 @@ public class InteiroTest {
 	@Test
 	public void imparesAteCemTest(){
 		assertTrue(inteiro.imparesAteCem(90) == 5);
-		assertTrue(inteiro.imparesAteCem(92) == 4);
 		assertFalse(inteiro.imparesAteCem(85) == 9);
 		assertTrue(inteiro.imparesAteCem(-50) == 75);
 	}
