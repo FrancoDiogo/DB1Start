@@ -1,5 +1,6 @@
 package br.com.db1;
 
+
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -13,16 +14,13 @@ public class InteiroTest {
 	@Test
 	public void exercicioSomaTest() {
 		assertTrue(2 == inteiro.soma(1, 1));
-		assertTrue(3 == inteiro.soma(2, 1));
-		assertFalse(4 == inteiro.soma(2, 3));
-		//System.out.println("Soma " + inteiro.soma(1, 2));?
+		assertFalse(3 == inteiro.soma(1, 1));
+		//System.out.println("Soma " + inteiro.soma(1, 2));vale a pena usar um teste desse?
 	}
 	
 	@Test
 	public void exercicioSubtracaoTest() {
-		assertTrue(0 == inteiro.subtrai(1, 1));
 		assertTrue(-5 == inteiro.subtrai(5, 10));
-		assertTrue(5 == inteiro.subtrai(10, 5));
 		assertFalse(2 == inteiro.subtrai(2, 2));
 	}
 	
